@@ -20,6 +20,11 @@ public struct OpenSCADRelay {
     
     osInteractor.click(at: 200, 400)
     osInteractor.paste()
+  }
+  public static func preview () {
+    osInteractor.press(.f5)
+  }
+  public static func render () {
     osInteractor.press(.f6)
   }
 }
